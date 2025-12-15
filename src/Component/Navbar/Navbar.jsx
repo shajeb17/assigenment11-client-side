@@ -2,7 +2,7 @@ import React from "react";
 import LogoText from "../SimpleCard/Logo/LogoText";
 import logo from "../../assets/Lightbulb and arena logo design.png"
 import LogoInfo from "../SimpleCard/Logo/LogoInfo";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -14,15 +14,15 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-2 text-[15px] font-semibold ">
+        <ul className="menu menu-horizontal px-1 space-x-4 text-[15px] font-semibold ">
            <NavLink>Home </NavLink>
            <NavLink>All Contests </NavLink>
  
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
+      <Link to={"register"} className="navbar-end">
+        button
+      </Link>
     </div>
   );
 };

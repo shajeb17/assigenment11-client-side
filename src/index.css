@@ -7,11 +7,5 @@ body{
 }
 @theme {
   --font-mulish:"Mulish", sans-serif; 
-  --color-mint-500: "linear-gradient(to right, #F07048, #9D4EDD, #F07048)",
 }
 
-@layer utilities {
-  .gradient-text {
-    @apply linear-gradient(to right, #F07048, #9D4EDD, #F07048);
-  }
-}

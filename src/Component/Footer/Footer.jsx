@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaLinkedin, FaLinkedinIn, FaTwitterSquare } from "react-icons/fa";
+import LogoText from "../SimpleCard/Logo/LogoText";
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
 
         {/* Logo + Description */}
         <div className="flex flex-col items-start space-y-4">
-          <div className="font-bold text-3xl font-mulish bg-gradient-to-r from-[#F07048] via-[#9D4EDD] to-[#F07048] bg-clip-text text-transparent">
-            ContestHub
+          <div className="">
+          <LogoText></LogoText>
           </div>
           <p className="text-gray-400 text-sm max-w-xs">
             A modern, user-friendly platform to create, participate, and manage contests for designers, writers, and creators.
